@@ -1,0 +1,157 @@
+<html>
+    <head>
+        <title>FORMS</title>
+    </head>
+    <body>
+        <h1>LOGIN FORM</h1>
+        <form action="">
+            <p>
+                Name: <br>
+                <input type="text" name="Name" placeholder="Enter the User name" size="25" maxlength="26">
+            </p>
+            <p>
+                Email: <br>
+                <input type="email" name="Email" placeholder="Enter the Password" size="25" maxlength="30" >
+            </p>
+            <p>
+                Subject: <br>
+                <input type="text" name="Subject" placeholder="Enter the subject name" size="25" maxlength="20">
+            </p>
+            <p>
+                <label for="Age">Age</label>
+                <input type="number" name="Age" size="25" maxlength="20" min="16" max="80" id="Age" >
+            </p>
+            <p>
+                <label for="dob">Date Of Birth:</label>
+                <input type="date" name="dob" id="dob">
+            </p>
+            <p>
+                <label for="price">Price Range:</label>
+                <input type="range" name="range" id="price" min="0" max="1000" step="10">
+            </p>
+            <p>
+                <label for="url">Website:</label>
+                <input type="url" name="website" id="url">
+            </p>
+            <p>
+                <label for="time">Appointment Time:</label>
+                <input type="time" name="Appointment Time" id="time">
+            </p>
+            <p>
+                <label for="Week">Leave week</label>
+                <input type="week" name="Leave week" id="Week">
+            </p>
+            <p>
+                <label for="search">Job Search:</label>
+                <input type="search" name="Search here" id="search">
+            </p>
+            <p>
+                Using iFrame embed the vdeo from you tube: <br>
+                <iframe 
+                    width="560" 
+                    height="315" 
+                    src="https://www.youtube.com/embed/OWuPgq9wEyI" 
+                    title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </p>
+            <p>
+                Map to Athipalayam Pirivu: <br>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3915.8892834611406!2d76.98173396428892!3d11.046927057164346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba8586d9a4ac24f%3A0x58b1466a13f1949d!2sAthipalayam%20Pirivu%2C%20Ganapathy%2C%20Coimbatore%2C%20Tamil%20Nadu%20641006!5e0!3m2!1sen!2sin!4v1658279920994!5m2!1sen!2sin" 
+                    width="600" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </p>
+            <br>
+            <p>
+                Hear my fav song: <br>
+                <audio src="/Maane Maane.mp3" controls></audio>
+            </p>
+            <br>
+            <p>
+                When I see a grl and started rolling toungues🤣: <br>
+                <video src="/VID-20141015-WA0001.mp4" controls width="400"></video>
+            </p>
+            <br>
+            <p>
+                Message: <br>
+                <textarea name="Comments" id="Comments" cols="30" rows="10" placeholder="please cmnt"></textarea>
+            </p>
+
+            <!-- Radio Box -->
+            <fieldset>
+                <p>
+                    I want to learn: <br>
+                    <input type="radio" name="request" value="HTML" id="html"><label for="html">HTML</label>
+                    <input type="radio" name="request" value="CSS" id="css"><label for="css">CSS</label> 
+                    <input type="radio" name="request" value="Java Script" id="java script" checked><label for="java script">Java Script</label> 
+                </p>
+            </fieldset>
+            <br>
+            <!-- Multiple radiobox -->
+            <fieldset>
+                <p>
+                    Skilled Languages: <br>
+                    <input type="checkbox" name="Skills[]" value="python">python
+                    <input type="checkbox" name="Skills[]" value="Java">Java
+                    <input type="checkbox" name="Skills[]" value="PHP">PHP
+                    <input type="checkbox" name="Skills[]" value="Java Script">Java Script
+                    <input type="checkbox" name="Skills[]" value="C++">C++
+                </p>
+            </fieldset>
+            <!-- optioned dropdown checkbox -->
+            <p>
+                Day: <br>
+                <select name="req week" id="req week">
+                    <option value="Select day">Select day</option>
+                    <option value="Monday">Monday</option>
+                    <option value="Tuesday">Tuesday</option>
+                    <option value="Wednesday">Monday</option>
+                    <option value="Thursday">Thursday</option>
+                    <option value="Friday">Friday</option>
+                    <option value="Saturday">Saturday</option>
+                    <option value="Sunday">Sunday</option>
+                </select>
+            </p>
+            <p>
+                Month: <br>
+                <select name="req Month" id="Month">
+                    <option value="Select Month">Select Month</option>
+                    <option value="January">January</option>
+                    <option value="February">February</option>
+                    <option value="March">March</option>
+                    <option value="April">April</option>
+                    <option value="May">May</option>
+                    <option value="June">June</option>
+                    <option value="July">July</option>
+                    <option value="August">August</option>
+                    <option value="Sept">Sept</option>
+                    <option value="Oct">Oct</option>
+                    <option value="Nov">Nov</option>
+                    <option value="Dec">Dec</option>
+                </select>
+            </p>
+
+            <!-- multiple checkbox -->
+            <p>
+                Fav Foods: <br>
+                <select name="Foods" multiple size="5">
+                    <option value="Kabhabb">Kabhabb</option>
+                    <option value="Tickangokka">Tickangokka</option>
+                    <option value="Spring Roll">Spring Roll</option>
+                    <option value="Bhurbhi">Bhurbhi</option>
+                    <option value="Paani">Paani</option>
+                </select>
+            </p>
+            <p>
+                <input type="Submit" name="Submit" value="Next">
+            </p>
+        </form>
+    </body>
+</html>
